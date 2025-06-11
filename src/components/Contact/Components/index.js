@@ -59,7 +59,9 @@ export default function Index() {
                             </p>
                         </Rounded>
                         <Rounded>
-                            <p>+63 933 4812 127</p>
+                            <p>
+                                <a href="tel:+639334812127">+63 933 4812 127</a>
+                            </p>
                         </Rounded>
                     </div>
                 </div>
