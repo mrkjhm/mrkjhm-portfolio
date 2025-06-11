@@ -25,8 +25,8 @@ export default function Index() {
             <motion.div /*style={{y}}*/ className={styles.info} ref={container}>
                 <div>
                     <span>
-                        <h3>Copyright</h3>
-                        <p>2025 @ mrkjhm</p>
+                        <h3>Version</h3>
+                        <p>2025 @ Edition</p>
                     </span>
                 </div>
                 <div>
