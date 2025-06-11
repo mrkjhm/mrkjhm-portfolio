@@ -87,12 +87,12 @@ export default function About() {
                     </div>
                     <div className={styles.image}>
                         <div className={styles.hi}>
-                            <i className="ri-arrow-right-long-line"></i>
+                            {/*<i className="ri-arrow-right-long-line"></i>*/}
                             <h2>I’m a self-taught Multimedia Designer passionate about storytelling through branding, video editing, and crafting eye-catching visuals for social media. As I expand my skills into Full-Stack Web Development, I enjoy creating easy-to-use websites, blending creativity and technical skills to bring ideas to life in both design and digital projects.</h2>
 
-                            <div className={styles.dots}>
+                            {/*<div className={styles.dots}>
                                 <p>Always exploring{".".repeat(dotCount)}</p>
-                            </div>
+                            </div>*/}
                         </div>
                         <div className={styles.profile}>
                             <Image

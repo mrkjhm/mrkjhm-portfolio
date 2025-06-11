@@ -95,7 +95,7 @@ export default function Landing() {
                 </div>
             </div>
             <div className={styles.title}>
-                <i className={`ri-arrow-right-down-long-line ${styles.icon}`}></i>
+                {/*<i className={`ri-arrow-right-down-long-line ${styles.icon}`}></i>*/}
                 <h2>
                     Multimedia <br/>
                     Designer & Developer
