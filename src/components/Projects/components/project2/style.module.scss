@@ -4,5 +4,20 @@
   h2 {
     font-family: var(--font-formula-condensed-bold), sans-serif;
     letter-spacing: 1px;
+    transition: all 0.2s;
+  }
+  p {
+    transition: all 0.2s;
+
+  }
+  &:hover {
+    h2 {
+
+      color: #4095bf;
+      transform: translateX(-10px);
+    }
+    p {
+      transform: translateX(10px);
+    }
   }
 }

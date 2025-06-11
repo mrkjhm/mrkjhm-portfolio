@@ -95,7 +95,7 @@
 }
 .menu-link-item {
     width: max-content;
-    clip-path: polygon(0 -5%, 100% -5%, 100% 82%, 0% 82%);
+    clip-path: polygon(0 -5%, 100% -5%, 100% 80%, 0% 80%);
     font-family: var(--font-formula-condensed-bold), sans-serif;
 
 }
@@ -120,6 +120,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    gap: 2px;
 }
 
 .menu-logo1 {

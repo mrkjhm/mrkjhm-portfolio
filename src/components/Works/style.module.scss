@@ -106,8 +106,10 @@
       display: none;
     }
     .body {
-      padding-top: 50px;
       .project {
+        >p:first-of-type {
+          padding-top: 70px;
+        }
         .details {
           img {
             display: block;

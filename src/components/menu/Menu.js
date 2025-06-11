@@ -186,8 +186,8 @@ export default function Menu() {
                         </div>
                         {/* Contact info */}
                         <div className="menu-info-col">
-                            <p>info@mrkjhm.com</p>
-                            <p>1234 567 8910</p>
+                            <a href="mailto:markjhemamerna@gmail.com">markjhemamerna@gmail.com</a>
+                            <p>+63 933 4812 127</p>
                         </div>
                     </div>
                 </div>

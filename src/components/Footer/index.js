@@ -48,11 +48,11 @@ export default function Index() {
                             <p>LinkedIn</p>
                         </a>
                     </Magnetic>
-                    <Magnetic>
+                   {/* <Magnetic>
                         <a href="https://www.figma.com/team_invite/redeem/ByrQ5fmSh03k73DnlVIiJj" target="_blank" rel="noopener noreferrer">
                             <p>Figma</p>
                         </a>
-                    </Magnetic>
+                    </Magnetic>*/}
 
                 </div>
             </motion.div>

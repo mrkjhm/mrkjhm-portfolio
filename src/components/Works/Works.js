@@ -16,7 +16,8 @@ const development = [
         color: "#000000",
         desc: "Personal Project",
         year: "2025",
-        link: "https://belisitas.vercel.app/"
+        link: "https://belisitas.vercel.app/",
+        figmaLink: "https://www.figma.com/design/jnHwEeBETEXO0M4j8xqxaD/Belisitas?node-id=0-1&t=S6qELt401Xi11BAa-1"
     },
     {
         title: "Fitness Tracker",

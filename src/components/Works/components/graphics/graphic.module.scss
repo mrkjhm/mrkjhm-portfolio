@@ -140,6 +140,11 @@
 
 @media (max-width: 640px) {
   .design {
+    .title {
+      >p {
+        padding-top: 15px;
+      }
+    }
     .body{
       .graphic{
         columns: 1;

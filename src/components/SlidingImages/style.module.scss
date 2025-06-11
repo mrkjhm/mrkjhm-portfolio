@@ -14,7 +14,7 @@
     position: relative;
     gap: 2vw;
     width: 120vw;
-    left: -10vw;
+    left: -11vw;
     .project{
       width: 25%;
       height: 22vw;
@@ -57,7 +57,15 @@
 @media(max-width: 1024px){
   .slidingImages{
     .slider {
-      width: 150%;
+      width: 150vw;
+      left: -10vw;
+      .project {
+        width: 25%;
+        height: 28vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 }
@@ -67,31 +75,30 @@
   .slidingImages{
     padding-top: 80px;
     .slider {
-      width: 250%;
-      left: -50%;
+      width: 170vw;
+      left: -27vw;
     }
-    .circleContainer{
-      position: relative;
-
-      .circle{
-        height: 1000%;
-        width: 120%;
-        left: -10%;
-        border-radius: 0 0 50% 50%;
-        background-color: white;
-        z-index: 1;
-        position: absolute;
-        box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
-      }
-    }
+    //.circleContainer{
+    //  position: relative;
+    //
+    //  .circle{
+    //    height: 1000%;
+    //    width: 120%;
+    //    left: -10%;
+    //    border-radius: 0 0 50% 50%;
+    //    background-color: white;
+    //    z-index: 1;
+    //    position: absolute;
+    //    box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+    //  }
+    //}
   }
 }
 
 @media(max-width: 640px){
   .slidingImages{
     .slider {
-      width: 250%;
-      left: -50%;
+
     }
   }
 }
