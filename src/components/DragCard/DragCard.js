@@ -21,7 +21,7 @@ export default function DragCards()  {
                         <div className={styles.button}>
                             <Rounded
                                 backgroundColor={"#4095bf"}>
-                                <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.behance.net/markjhemamerna" target="_blank" rel="noopener noreferrer">
                                     <p>Behance</p>
                                 </a>
                             </Rounded>
