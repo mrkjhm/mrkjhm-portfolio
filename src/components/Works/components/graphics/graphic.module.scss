@@ -1,0 +1,152 @@
+.design {
+  position: relative;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+
+    > p {
+      padding-top: 100px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      opacity: 0.5;
+    }
+
+    .button {
+      p {
+        text-transform: uppercase;
+        padding: 1.5vw 3vw;
+        font-size: clamp(0.9rem, 2.5vw, 1rem);
+
+      }
+    }
+
+    .text {
+      text-transform: Capitalize;
+
+    }
+
+
+
+    .Rounded{
+
+      border: 1px solid #001514;
+      color: #001514;
+      border-radius: 50px;
+
+      cursor: pointer;
+      p{
+        margin: 0px;
+        font-size: 16px;
+        font-weight: 300;
+        position: relative;
+        z-index: 1;
+        color: black;
+      }
+    }
+  }
+
+  .body {
+    p{
+      text-transform: uppercase;
+      color: gray;
+      padding: 0 0 3rem 0;
+    }
+    .graphic{
+      columns: 4;
+
+      img {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+
+  }
+
+  .modalContent {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fullImage {
+    width: auto !important;  /* Override Next.js fixed width */
+    height: auto !important; /* Override Next.js fixed height */
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+
+
+  .closeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #fff;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0.1rem 0.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+}
+
+@media(max-width: 1024px) {
+  .design {
+    .body {
+      .graphic {
+        columns: 3;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .design {
+    .body{
+      .graphic{
+        columns: 2;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .design {
+    .body{
+      .graphic{
+        columns: 1;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+
+
+/*.social-media img {*/
+/*    height: 50px;*/
+/*    width: 50px;*/
+/*    filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(5%) hue-rotate(340deg) brightness(101%) contrast(105%);*/
+/*    -webkit-user-drag: none; !* For WebKit-based browsers (Safari, Chrome) *!*/
+/*}*/
+
+/*.social-media img:hover {
+    filter: brightness(0) saturate(100%) invert(46%) sepia(74%) saturate(4591%) hue-rotate(338deg) brightness(101%) contrast(105%);
+}*/
+
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #0f0f0f;
+    .container{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding-bottom: 50px;
+        svg{
+            height: 100px;
+            padding: 20px;
+            fill: #c8bdb0;
+            transition: fill 0.2s;
+            cursor: pointer;
+            &:hover{
+                fill: #ec4e39;
+            }
+        }
+
+    }
+    p{
+        color:#494136;
+        padding-bottom: 30px;
+    }
+}

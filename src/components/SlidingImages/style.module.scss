@@ -1,0 +1,97 @@
+.slidingImages{
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 1;
+  .slider{
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    gap: 2vw;
+    width: 120vw;
+    left: -10vw;
+    .project{
+      width: 25%;
+      height: 22vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .imageContainer{
+        position: relative;
+        aspect-ratio: 4 / 3; // or 16 / 9 or whatever your images are
+        width: 95%;
+        height: auto; // Let aspect-ratio handle height
+        img{
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .circleContainer{
+    position: relative;
+    margin-top: 100px;
+    .circle{
+      height: 1550%;
+      width: 120%;
+      left: -10%;
+      border-radius: 0 0 50% 50%;
+      background-color: white;
+      z-index: 1;
+      position: absolute;
+      box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+    }
+  }
+}
+
+@media(max-width: 1280px){
+  .slidingImages{
+    padding-top: 100px;
+  }
+}
+
+@media(max-width: 1024px){
+  .slidingImages{
+    .slider {
+      width: 150%;
+    }
+  }
+}
+
+
+@media(max-width: 768px){
+  .slidingImages{
+    padding-top: 80px;
+    .slider {
+      width: 250%;
+      left: -50%;
+    }
+    .circleContainer{
+      position: relative;
+
+      .circle{
+        height: 1000%;
+        width: 120%;
+        left: -10%;
+        border-radius: 0 0 50% 50%;
+        background-color: white;
+        z-index: 1;
+        position: absolute;
+        box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+      }
+    }
+  }
+}
+
+@media(max-width: 640px){
+  .slidingImages{
+    .slider {
+      width: 250%;
+      left: -50%;
+    }
+  }
+}

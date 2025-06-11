@@ -1,0 +1,62 @@
+.main {
+  .dragcard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #0a0a0a;
+
+
+    h2 {
+      position: relative;
+      font-weight: bold;
+      color: #262626;
+      font-size: clamp( 2rem, 20vw, 20rem);
+      cursor: pointer;
+      font-family: var(--font-formula-condensed-bold), sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      text-align: center;
+      line-height: 120px;
+      opacity: 0.5;
+
+      span:nth-child(1) {
+        color: #4095bf;
+      }
+
+      .design {
+        font-size: clamp( 2rem, 10vw, 20rem);
+        opacity: 0.8;
+      }
+
+    }
+  }
+  .button {
+    z-index: 10;
+    position: absolute;
+    bottom: 100px;
+    p {
+      padding: 1.5vw 3vw;
+      font-size: clamp(0.9rem, 2.5vw, 1rem);
+      color: white;
+
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .main {
+
+    .dragcard {
+      h2 {
+
+        line-height: 50px;
+      }
+    }
+  }
+}

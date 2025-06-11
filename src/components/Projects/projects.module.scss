@@ -1,0 +1,158 @@
+.projects{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: calc(6vw * 2.5);
+  padding-right: calc(6vw * 2.5);
+  flex-direction: column;
+  background-color: white;
+  padding-bottom: 20px;
+  .body{
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .body2 {
+    display: none;
+    max-width: 1400px;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding: 20px 40px;
+    z-index: 1;
+  }
+
+  .modalContainer{
+    height: 350px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  .modalSlider{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  .modal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal img{
+    width: auto;
+  }
+
+  .cursor, .cursorLabel{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #4095bf;
+    color: white;
+    position: fixed;
+    z-index:3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    pointer-events: none;
+
+    a {
+      color: white;
+    }
+  }
+
+  .cursorLabel{
+    background-color: transparent;
+  }
+}
+
+@media(max-width: 1024px) {
+  .projects {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    .body {
+      display: none;
+    }
+    .body2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 30px;
+
+      h2 {
+        font-size: clamp(1.70em, 2.3vw, 2.5em);
+        padding-bottom: 10px;
+      }
+      p {
+        padding: 0;
+      }
+      img {
+        padding-bottom: 20px;
+        width: auto;
+      }
+
+    }
+    p {
+      font-size: 12px;
+      padding: 15px 25px;
+    }
+    .modalContainer{
+      display: none;
+    }
+
+  }
+}
+
+@media(max-width: 768px) {
+  .projects {
+    padding: 20px 2em 50px 2em;
+    .body {
+      margin-bottom: 50px;
+    }
+    .body2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+      padding-bottom: 30px;
+
+      img {
+        padding-bottom: 20px;
+      }
+      .details {
+        display: flex;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 640px) {
+  .projects {
+    padding-bottom: 50px;
+    .body {
+      margin-bottom: 50px;
+    }
+  }
+}

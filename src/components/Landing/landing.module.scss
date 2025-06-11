@@ -1,0 +1,170 @@
+.landing {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    height: 100vh;
+
+    img {
+        object-fit: cover;
+    }
+
+    .name {
+        position: absolute;
+        top: 40%;
+        right: 69%;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        clip-path: polygon(0 -10%, 100% -10%, 100% 93%, 0 93%);
+
+        h2 {
+            font-family: var(--font-formula-condensed-bold), sans-serif;
+        }
+    }
+
+    .name2 {
+        // top-left corner, top-right corner, Bottom-right corner,Bottom-left corner ,
+
+
+        position: absolute;
+        inset: 0;
+        color: white;
+
+        h2 {
+            font-size: 80px;
+            line-height: 100%;
+            color: #4095bf;
+        }
+    }
+    .name h2 {
+        font-size: 80px;
+        line-height: 0.90;
+    }
+
+    .description {
+        position: absolute;
+        top: 50%;
+        right: 64%;
+
+        p{
+            line-height: 20px;
+        }
+    }
+
+
+    .name span {
+        font-size: 14px;
+    }
+    .title span {
+
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+
+    .title {
+        position: absolute;
+        top: 25%;
+        left: 65%;
+        display: flex;
+        flex-direction: column;
+
+        i {
+            padding-bottom: 50px;
+        }
+
+        h2 {
+            padding-bottom: 20px;
+        }
+
+        span {
+            padding-bottom: 50px;
+        }
+
+        p:nth-of-type(1) {
+
+            font-size: clamp(1rem, 2vw, 1rem);
+            line-height: 3rem;
+
+        }
+
+        h2 {
+            width: 100%;
+            font-size: clamp(2rem, 2vw, 3rem);
+            line-height: 3rem;
+            text-transform: capitalize;
+            color: #fff;
+            font-family: var(--font-formula-condensed-bold), sans-serif;
+            letter-spacing: 2px;
+        }
+
+
+    }
+
+    .title p {
+        //clamp(min, cur, upper)
+
+    }
+
+    .icon {
+        color: #fff;
+        font-size: 30px
+    }
+
+    p {
+        color: #fff;
+    }
+
+    video {
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 100%;
+        z-index: -100;
+    }
+
+}
+@media (max-width: 1080px) {
+
+}
+
+
+@media(max-width: 900px) {
+    .landing {
+
+        .name {
+            display: none;
+        }
+        .description {
+            display: none;
+        }
+        .title {
+            flex-direction: column;
+            top:  450px;
+            left: 30px;
+            display: flex;
+            gap: 1rem;
+            font-size: 1.5rem;
+
+            .download {
+                font-size: 1rem;
+                width: 150px;
+                height: 40px;
+            }
+        .title p {
+            //clamp(min, cur, upper)
+            width: 100%;
+            font-size: 2rem;
+            line-height: 3rem;
+            text-transform: capitalize;
+        }
+
+        span {
+
+            font-size: 14px;
+        }
+    }
+        }
+
+}
+
