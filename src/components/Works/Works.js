@@ -11,6 +11,14 @@ import Development from '@/components/Works/components/development'
 
 const development = [
     {
+        title: "Jadoo",
+        src: "jadoo.jpg",
+        color: "#f1a501",
+        desc: "Personal Project",
+        year: "2025",
+        link: "https://jadoo-olive.vercel.app/"
+    },
+    {
         title: "ViewMerce",
         src: "belisitas.jpg",
         color: "#000000",

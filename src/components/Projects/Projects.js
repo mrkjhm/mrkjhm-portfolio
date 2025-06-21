@@ -11,6 +11,14 @@ import Rounded from '../../common/RoundedButton';
 
 const projects = [
     {
+        title: "Jadoo",
+        src: "jadoo.jpg",
+        color: "#f1a501",
+        desc: "Personal Project",
+        year: "2025",
+        link: "https://jadoo-olive.vercel.app/"
+    },
+    {
         title: "ViewMerce",
         src: "belisitas.jpg",
         color: "#000000",
@@ -24,30 +32,38 @@ const projects = [
         desc: "Zuitt Bootcamp Project",
         link: "https://fitness-client-beige.vercel.app/"
     },
-    {
-        title: "Movie Catalog",
-        src: "movie_catalog.jpg",
-        color: "#EFE8D3",
-        desc: "Zuitt Bootcamp Project",
-        link: "https://movie-catalog-client.vercel.app/"
-    }
+    // {
+    //     title: "Movie Catalog",
+    //     src: "movie_catalog.jpg",
+    //     color: "#EFE8D3",
+    //     desc: "Zuitt Bootcamp Project",
+    //     link: "https://movie-catalog-client.vercel.app/"
+    // }
 ]
 
 const projects2 = [
     {
+        title: "Jadoo",
+        src: "jadoo.jpg",
+        color: "#f1a501",
+        desc: "Personal Project",
+        year: "2025",
+        link: "https://jadoo-olive.vercel.app/"
+    },
+    {
         title: "ViewMerce",
         src: "belisitas.jpg",
         color: "#000000",
         desc: "Personal Project",
         link: "https://belisitas.vercel.app/"
     },
-    {
-        title: "Fitness Tracker",
-        src: "fitness_tracker.jpg",
-        color: "#8C8C8C",
-        desc: "Zuitt Bootcamp Project",
-        link: "https://fitness-client-beige.vercel.app/"
-    }
+    // {
+    //     title: "Fitness Tracker",
+    //     src: "fitness_tracker.jpg",
+    //     color: "#8C8C8C",
+    //     desc: "Zuitt Bootcamp Project",
+    //     link: "https://fitness-client-beige.vercel.app/"
+    // }
 ]
 
 const scaleAnimation = {
