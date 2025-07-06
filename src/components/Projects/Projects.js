@@ -30,7 +30,7 @@ const projects = [
         src: "fitness_tracker.jpg",
         color: "#8C8C8C",
         desc: "Zuitt Bootcamp Project",
-        link: "https://fitlog-peach.vercel.app/"
+        link: "https://fitlog-fitness.vercel.app/"
     },
     // {
     //     title: "Movie Catalog",
@@ -62,7 +62,7 @@ const projects2 = [
     //     src: "fitness_tracker.jpg",
     //     color: "#8C8C8C",
     //     desc: "Zuitt Bootcamp Project",
-    //     link: "https://fitness-client-beige.vercel.app/"
+    //     link: "https://fitlog-fitness.vercel.app/"
     // }
 ]
 
