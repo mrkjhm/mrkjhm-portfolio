@@ -33,7 +33,7 @@ const development = [
         color: "#8C8C8C",
         desc: "Zuitt Bootcamp Project",
         year: "2024",
-        link: "https://fitness-client-beige.vercel.app/"
+        link: "https://fitlog-peach.vercel.app/"
     },
     {
         title: "Movie Catalog",
