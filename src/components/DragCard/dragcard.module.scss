@@ -38,10 +38,12 @@
   .button {
     z-index: 10;
     position: absolute;
-    bottom: 100px;
+    bottom: 80px;
     p {
-      padding: 1.5vw 3vw;
-      font-size: clamp(0.9rem, 2.5vw, 1rem);
+
+
+      padding: 1.5vw 7vw;
+      font-size: clamp(0.9rem, 2.5vw, 1.5rem);
       color: white;
 
     }

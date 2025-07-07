@@ -71,7 +71,7 @@ const Cards = () => {
                 src="/images/Image_4.jpg"
                 alt="Example image"
                 rotate="8deg"
-                top="50%"
+                top="45%"
                 left="43%"
                 className="w-48 md:w-60"
             />
