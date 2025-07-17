@@ -8,71 +8,7 @@ import styles from './projects.module.scss'
 import Project from '@/components/Projects/components/project';
 import Project2 from '@/components/Projects/components/project2';
 import Rounded from '../../common/RoundedButton';
-
-const projects = [
-    {
-        title: "Fitness Tracker (React Native)",
-        src: "fitness-tracker-react-native.jpg",
-        color: "#9a0e0e",
-        desc: "Personal Project",
-        year: "2025",
-        link: "/fitnessTrackerReactNative"
-    },
-    {
-        title: "Jadoo",
-        src: "jadoo.jpg",
-        color: "#f1a501",
-        desc: "Personal Project",
-        year: "2025",
-        link: "https://jadoo-olive.vercel.app/"
-    },
-    {
-        title: "ViewMerce",
-        src: "belisitas.jpg",
-        color: "#000000",
-        desc: "Personal Project",
-        link: "https://belisitas.vercel.app/"
-    },
-    {
-        title: "Fitness Tracker",
-        src: "fitness_tracker.jpg",
-        color: "#8C8C8C",
-        desc: "Zuitt Bootcamp Project",
-        link: "https://fitlog-fitness.vercel.app/"
-    },
-    // {
-    //     title: "Movie Catalog",
-    //     src: "movie_catalog.jpg",
-    //     color: "#EFE8D3",
-    //     desc: "Zuitt Bootcamp Project",
-    //     link: "https://movie-catalog-client.vercel.app/"
-    // }
-]
-
-const projects2 = [
-    {
-        title: "Jadoo",
-        src: "jadoo.jpg",
-        color: "#f1a501",
-        desc: "Personal Project",
-        year: "2025",
-        link: "https://jadoo-olive.vercel.app/"
-    },
-    {
-        title: "ViewMerce",
-        src: "belisitas.jpg",
-        color: "#000000",
-        desc: "Personal Project",
-        link: "https://belisitas.vercel.app/"
-    },
-    // {
-    //     title: "Fitness Tracker",
-    //     src: "fitness_tracker.jpg",
-    //     color: "#8C8C8C",
-    //     desc: "Zuitt Bootcamp Project",
-    //     link: "https://fitlog-fitness.vercel.app/"
-    // }
-]
+import { developmentList} from "@/components/Works/components/developmentList";
 
 const scaleAnimation = {
     initial: {scale: 0, x:"-50%", y:"-50%"},
@@ -131,7 +67,7 @@ export default function Home() {
             onMouseMove={(e) => {moveItems(e.clientX, e.clientY)}}
             onClick={() => {
                 if (modal.active) {
-                    const project = projects[modal.index];
+                    const project = developmentList[modal.index];
                     if (project?.link) {
                         window.open(project.link, '_blank');
                     }
@@ -148,14 +84,14 @@ export default function Home() {
             {/*</div>*/}
             <div className={styles.body}>
                 {
-                    projects.map( (project, index) => {
+                    developmentList.slice(0, 4).map( (project, index) => {
                         return <Project index={index} title={project.title} link={project.link}  desc={project.desc} manageModal={manageModal} key={index}/>
                     })
                 }
             </div>
             <div className={styles.body2}>
                 {
-                    projects2.map( (project, index) => {
+                    developmentList.slice(0, 4).map( (project, index) => {
                         return (
                             <div key={index}>
                                 <div className={styles.details}>
@@ -185,7 +121,7 @@ export default function Home() {
                 <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer} >
                     <div style={{top: index * -100 + "%"}} className={styles.modalSlider}>
                         {
-                            projects.map( (project, index) => {
+                            developmentList.slice(0, 4).map( (project, index) => {
                                 const { src, color } = project
                                 return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
                                     <Image
@@ -208,7 +144,7 @@ export default function Home() {
                     initial="initial"
                     animate={active ? "enter" : "closed"}
                 >
-                    <a href={projects[index]?.link} target="_blank">
+                    <a href={developmentList[index]?.link} target="_blank">
                         View
                     </a>
                 </motion.div>

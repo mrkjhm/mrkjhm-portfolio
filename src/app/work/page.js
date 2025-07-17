@@ -56,8 +56,8 @@ export default function Work() {
                             <p>All</p>
                         </Rounded>
                         <Rounded
-                            onClick={() => setFilter("development")}
-                            active={filter === "development"}
+                            onClick={() => setFilter("developmentList")}
+                            active={filter === "developmentList"}
                         >
                             <p>Development</p>
                         </Rounded>

@@ -11,9 +11,16 @@ import Rounded from "@/common/RoundedButton";
 
 export default function Page() {
 
-    const clickToResume = () => {
+    const clickToAPK = () => {
         window.open(
-            "https://www.figma.com/design/9nCoAND8s4MWpugmQXwt38/Fitness-Tracker-App?node-id=0-1&t=83okAZVRr9F73qri-1",
+            "https://drive.google.com/file/d/1WJ9XM1HeF6JHx8vxTWQCDQwUlLHLRXEW/view?usp=drive_link",
+            "_blank"
+        )
+    }
+
+    const clickToFigma = () => {
+        window.open(
+            "https://drive.google.com/file/d/1WJ9XM1HeF6JHx8vxTWQCDQwUlLHLRXEW/view?usp=drive_link",
             "_blank"
         )
     }
@@ -47,6 +54,10 @@ export default function Page() {
                                     <h4>Scan to download the App</h4>
                                     <p>*For Android only</p>
                                     <Image src={fitnessTracker.QRcode} alt="QRcode Code" className={styles.qrCode} />
+                                    <div className={styles.download}>
+                                        <p>or</p>
+                                        <p onClick={clickToAPK}>Download the APK</p>
+                                    </div>
 
                                 </div>
                                 <Link href="https://www.figma.com/design/9nCoAND8s4MWpugmQXwt38/Fitness-Tracker-App?node-id=0-1&t=83okAZVRr9F73qri-1" target="_blank" className={styles.figma}>

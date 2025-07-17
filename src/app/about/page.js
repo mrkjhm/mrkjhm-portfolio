@@ -16,7 +16,7 @@ const details = [
     },
     {
         number: "02",
-        title: "Web Development",
+        title: "Web Index",
         description: "Building websites and web applications that people can use online, including the structure, features, and how they work."
     },
     {

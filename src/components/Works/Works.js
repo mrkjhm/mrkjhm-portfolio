@@ -3,87 +3,12 @@ import Image from "next/image";
 import gsap from "gsap";
 import {motion, useScroll, useTransform} from "framer-motion";
 
-
+import {developmentList} from "@/components/Works/components/developmentList";
 import styles from './style.module.scss'
 import Graphic from '@/components/Works/components/graphics'
 import Development from '@/components/Works/components/development'
 
 
-const development = [
-    {
-        title: "Fitness Tracker (React Native)",
-        src: "fitness-tracker-react-native.jpg",
-        color: "#9a0e0e",
-        desc: "Personal Project",
-        year: "2025",
-        link: "/fitnessTrackerReactNative"
-    },
-    {
-        title: "Jadoo",
-        src: "jadoo.jpg",
-        color: "#f1a501",
-        desc: "Personal Project",
-        year: "2025",
-        link: "https://jadoo-olive.vercel.app/"
-    },
-    {
-        title: "ViewMerce",
-        src: "belisitas.jpg",
-        color: "#000000",
-        desc: "Personal Project",
-        year: "2025",
-        link: "https://belisitas.vercel.app/",
-        figmaLink: "https://www.figma.com/design/jnHwEeBETEXO0M4j8xqxaD/Belisitas?node-id=0-1&t=S6qELt401Xi11BAa-1"
-    },
-    {
-        title: "Fitness Tracker",
-        src: "fitness_tracker.jpg",
-        color: "#8C8C8C",
-        desc: "Zuitt Bootcamp Project",
-        year: "2024",
-        link: "https://fitlog-fitness.vercel.app/"
-    },
-    {
-        title: "Movie Catalog",
-        src: "movie_catalog.jpg",
-        color: "#EFE8D3",
-        desc: "Zuitt Bootcamp Project",
-        year: "2024",
-        link: "https://movie-catalog-client.vercel.app/"
-    }
-]
-
-// const graphics = [
-//     {
-//         src: "Image_1.jpg"},
-//     {
-//         src: "Image_2.jpg"
-//     },
-//     {
-//         src: "Image_3.jpg"
-//     },
-//     {
-//         src: "Image_4.jpg"
-//     },
-//     {
-//         src: "Image_5.jpg"
-//     },
-//     {
-//         src: "Kit-Sleeves.jpg"
-//     },
-//     {
-//         src: "Landing-page-1.jpg"
-//     },
-//     {
-//         src: "Chocolatey-Choices_FA.jpg"
-//     },
-//     {
-//         src: "Image_6.jpg"
-//     },
-//     {
-//         src: "Serbisyong-Angat-to-Kaibigan-Streamer.jpg"
-//     },
-// ]
 
 const scaleAnimation = {
     initial: {scale: 0, x:"-50%", y:"-50%"},
@@ -91,10 +16,7 @@ const scaleAnimation = {
     closed: {scale: 0, x:"-50%", y:"-50%", transition: {duration: 0.4, ease: [0.32, 0, 0.67, 0]}}
 }
 
-
-
 export default function Home({ filter }) {
-
 
 
     const [modal, setModal] = useState({ active: false, index: 0, link: "" });
@@ -146,7 +68,7 @@ export default function Home({ filter }) {
                 onMouseMove={(e) => {moveItems(e.clientX, e.clientY)}}
                 onClick={() => {
                     if (modal.active) {
-                        const project = development[modal.index];
+                        const project = developmentList[modal.index];
                         if (project?.link) {
                             window.open(project.link, '_blank');
                         }
@@ -162,10 +84,10 @@ export default function Home({ filter }) {
             </div>*/}
                 <div className={styles.body}>
                     <div className={styles.project}>
-                        {(filter === "all" || filter === "development") && <p>Development</p> }
+                        {(filter === "all" || filter === "developmentList") && <p>Development</p> }
 
-                        {(filter === "all" || filter === "development") &&
-                            development.map((project, index) => (
+                        {(filter === "all" || filter === "developmentList") &&
+                            developmentList.map((project, index) => (
                                 <div className={styles.details} key={index}>
                                     <Development
                                         index={index}
@@ -190,7 +112,7 @@ export default function Home({ filter }) {
                     <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
                         <div style={{top: index * -100 + "%"}} className={styles.modalSlider}>
                             {
-                                development.map( (project, index) => {
+                                developmentList.map( (project, index) => {
                                     const { src, color } = project
                                     return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
                                         <Image
@@ -211,7 +133,7 @@ export default function Home({ filter }) {
                         initial="initial"
                         animate={active ? "enter" : "closed"}
                     >
-                        <a href={development[index]?.link} target="_blank">
+                        <a href={developmentList[index]?.link} target="_blank">
                             View
                         </a>
                     </motion.div>
