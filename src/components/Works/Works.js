@@ -11,6 +11,14 @@ import Development from '@/components/Works/components/development'
 
 const development = [
     {
+        title: "Fitness Tracker (React Native)",
+        src: "fitness-tracker-react-native.jpg",
+        color: "#9a0e0e",
+        desc: "Personal Project",
+        year: "2025",
+        link: "/fitnessTrackerReactNative"
+    },
+    {
         title: "Jadoo",
         src: "jadoo.jpg",
         color: "#f1a501",
@@ -45,37 +53,37 @@ const development = [
     }
 ]
 
-const graphics = [
-    {
-        src: "Image_1.jpg"},
-    {
-        src: "Image_2.jpg"
-    },
-    {
-        src: "Image_3.jpg"
-    },
-    {
-        src: "Image_4.jpg"
-    },
-    {
-        src: "Image_5.jpg"
-    },
-    {
-        src: "Kit-Sleeves.jpg"
-    },
-    {
-        src: "Landing-page-1.jpg"
-    },
-    {
-        src: "Chocolatey-Choices_FA.jpg"
-    },
-    {
-        src: "Image_6.jpg"
-    },
-    {
-        src: "Serbisyong-Angat-to-Kaibigan-Streamer.jpg"
-    },
-]
+// const graphics = [
+//     {
+//         src: "Image_1.jpg"},
+//     {
+//         src: "Image_2.jpg"
+//     },
+//     {
+//         src: "Image_3.jpg"
+//     },
+//     {
+//         src: "Image_4.jpg"
+//     },
+//     {
+//         src: "Image_5.jpg"
+//     },
+//     {
+//         src: "Kit-Sleeves.jpg"
+//     },
+//     {
+//         src: "Landing-page-1.jpg"
+//     },
+//     {
+//         src: "Chocolatey-Choices_FA.jpg"
+//     },
+//     {
+//         src: "Image_6.jpg"
+//     },
+//     {
+//         src: "Serbisyong-Angat-to-Kaibigan-Streamer.jpg"
+//     },
+// ]
 
 const scaleAnimation = {
     initial: {scale: 0, x:"-50%", y:"-50%"},

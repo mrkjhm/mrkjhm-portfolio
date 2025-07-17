@@ -11,6 +11,14 @@ import Rounded from '../../common/RoundedButton';
 
 const projects = [
     {
+        title: "Fitness Tracker (React Native)",
+        src: "fitness-tracker-react-native.jpg",
+        color: "#9a0e0e",
+        desc: "Personal Project",
+        year: "2025",
+        link: "/fitnessTrackerReactNative"
+    },
+    {
         title: "Jadoo",
         src: "jadoo.jpg",
         color: "#f1a501",

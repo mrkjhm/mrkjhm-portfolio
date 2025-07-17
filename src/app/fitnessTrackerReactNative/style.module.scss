@@ -1,0 +1,178 @@
+.main {
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+  padding-left: calc(6vw * 2.5);
+  padding-right: calc(6vw * 2.5);
+
+  .container {
+    max-width: 1536px; /* Adjust this value as needed */
+    margin-left: auto;
+    margin-right: auto;
+
+    .body {
+      padding-top: 200px;
+      padding-bottom: 200px;
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        margin-bottom: 200px;
+
+        /*.phone1 {
+          width: 60%;
+        }*/
+
+        .headerRight {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+
+          .fitnessLogo {
+            width:  clamp(10rem, 5vw, 10rem);
+            padding-bottom: 20px;
+          }
+
+          h3 {
+            font-size: clamp(2.4rem, 7vw, 10rem);
+            font-weight: bold;
+          }
+          p {
+            font-size: clamp(1rem, 4vw, 2rem);
+          }
+        }
+      }
+
+      .bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:60px;
+
+        .QRDetails {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+          .qrCodeDetails {
+            h4 {
+              font-weight: bold;
+              font-size: clamp(1rem, 2vw, 3rem);
+            }
+            p {
+              color: red;
+              margin-bottom: 30px;
+            }
+
+            .qrCode {
+              margin-bottom: 30px;
+            }
+          }
+
+          .figmaDetail {
+            h4 {
+              font-weight: bold;
+
+            }
+            p {
+
+              width: 500px;
+            }
+          }
+
+          .figma {
+            display: flex;
+            p {
+              font-size: clamp(1rem, 2vw, 2rem);
+              padding: 15px;
+            };
+
+            .button{
+              z-index: 1;
+              width: 180px;
+              height: 180px;
+              background-color: #9A0E0E;
+              color: white;
+              border-radius: 50%;
+              position: absolute;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+
+
+              p{
+                margin: 0px;
+                font-size: 16px;
+                font-weight: 300;
+                position: relative;
+                z-index: 1;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                i {
+                  font-size: clamp(1rem, 2vw, 3rem);
+                  margin-bottom: 10px;
+                  transition: transform 0.4s ease; // 🟢 Add this
+                }
+              }
+              &:hover {
+                p i {
+                  transform: rotate(10deg); // 🌀 Rotate on hover
+                  scale: 1.2;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  .main {
+    .container {
+      .body {
+
+        .header {
+          margin-bottom: 100px;
+        }
+
+        .bottom {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          margin-bottom: 100px;
+
+          .QRDetails {
+
+            .qrCodeDetails {
+              h4 {
+                font-weight: bold;
+                font-size: 20px;
+              }
+            }
+          }
+          .figma {
+            justify-content: center;
+          }
+        }
+
+      }
+    }
+  }
+}
