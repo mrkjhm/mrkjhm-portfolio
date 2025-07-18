@@ -11,8 +11,8 @@ import styles from './description.module.scss'
 
 export default function Description() {
 
-    const phrase = "I’m a Multimedia Designer and Zuitt bootcamper\n" +
-        "with Full-Stack Web Index.";
+    const phrase = "I’m a Multimedia Designer and \n" +
+        "Full-Stack Web Developer.";
 
     const description = useRef(null);
     const isInView = useInView(description, { once: true, margin: '-100px' });

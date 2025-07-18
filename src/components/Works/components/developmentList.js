@@ -21,6 +21,7 @@ export const developmentList = [
         src: "belisitas.jpg",
         color: "#000000",
         desc: "Personal Project",
+        year: "2025",
         link: "https://belisitas.vercel.app/"
     },
     {
@@ -28,6 +29,7 @@ export const developmentList = [
         src: "fitness_tracker.jpg",
         color: "#8C8C8C",
         desc: "Zuitt Bootcamp Project",
+        year: "2024",
         link: "https://fitlog-fitness.vercel.app/"
     },
     {
@@ -35,6 +37,7 @@ export const developmentList = [
         src: "movie_catalog.jpg",
         color: "#EFE8D3",
         desc: "Zuitt Bootcamp Project",
+        year: "2024",
         link: "https://movie-catalog-client.vercel.app/"
     }
 ]
