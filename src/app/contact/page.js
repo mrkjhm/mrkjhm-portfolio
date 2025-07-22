@@ -83,17 +83,17 @@ export default function Index() {
                                 <h3>Socials</h3>
                                 <div className={styles.socials}>
                                     <Magnetic>
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.linkedin.com/in/mark-jhem-amerna-24b299158/" target="_blank" rel="noopener noreferrer">
                                             <p>LinkedIn</p>
                                         </a>
                                     </Magnetic>
+                                    {/*<Magnetic>*/}
+                                    {/*    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">*/}
+                                    {/*        <p>Facebook</p>*/}
+                                    {/*    </a>*/}
+                                    {/*</Magnetic>*/}
                                     <Magnetic>
-                                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                                            <p>Facebook</p>
-                                        </a>
-                                    </Magnetic>
-                                    <Magnetic>
-                                        <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.behance.net/markjhemamerna" target="_blank" rel="noopener noreferrer">
                                             <p>Behance</p>
                                         </a>
                                     </Magnetic>

@@ -10,22 +10,22 @@ import Lenis from "lenis";
 
 const details = [
     {
-        number: "01",
+        number: "01.",
         title: "Graphic/video Editing",
         description: "Creating and improving images or videos by adding effects, trimming, or adjusting visuals to make them more engaging and professional."
     },
     {
-        number: "02",
-        title: "Web Index",
+        number: "02.",
+        title: "Web Development",
         description: "Building websites and web applications that people can use online, including the structure, features, and how they work."
     },
     {
-        number: "03",
+        number: "03.",
         title: "Web Design",
         description: "Creating the layout, colors, and style of a website using Figma to make it look good and easy to use for visitors."
     },
     {
-        number: "04",
+        number: "04.",
         title: "Responsive Website",
         description: "A website designed to automatically adjust and look good on all screen sizes, whether it’s a phone, tablet, laptop, or desktop computer."
     }
@@ -88,11 +88,11 @@ export default function About() {
                     <div className={styles.image}>
                         <div className={styles.hi}>
                             {/*<i className="ri-arrow-right-long-line"></i>*/}
-                            <h2>I’m a self-taught Multimedia Designer passionate about storytelling through branding, video editing, and crafting eye-catching visuals for social media. As I expand my skills into Full-Stack Web Development, I enjoy creating easy-to-use websites, blending creativity and technical skills to bring ideas to life in both design and digital projects.</h2>
 
                             {/*<div className={styles.dots}>
                                 <p>Always exploring{".".repeat(dotCount)}</p>
                             </div>*/}
+                            <h2>I’m a self-taught Multimedia Designer passionate about storytelling through branding, video editing, and crafting eye-catching visuals for social media. As I expand my skills into Full-Stack Web Development, I enjoy creating easy-to-use websites, blending creativity and technical skills to bring ideas to life in both design and digital projects.</h2>
                         </div>
                         <div className={styles.profile}>
                             <Image
@@ -106,7 +106,7 @@ export default function About() {
                     </div>
 
                     <div className={styles.details}>
-                        <h2>I can help you with{".".repeat(dotCount)}</h2>
+                        <h2>What I do{".".repeat(dotCount)}</h2>
                         <div className={styles.list}>
                             {
                                 details.map((item, index) => (

@@ -25,13 +25,13 @@ export default function Index() {
             <motion.div /*style={{y}}*/ className={styles.info} ref={container}>
                 <div>
                     <span>
-                        <h3>Version</h3>
-                        <p>2025 @ Edition</p>
+                        <h3>...</h3>
+                        <p>2025 @ mrkjhm</p>
                     </span>
                 </div>
                 <div>
                     <span>
-                        <h3>Socials</h3>
+                        <h3>...</h3>
                         <Magnetic>
                              <a href="https://github.com/mrkjhm" target="_blank" rel="noopener noreferrer">
                                 <p>Github</p>

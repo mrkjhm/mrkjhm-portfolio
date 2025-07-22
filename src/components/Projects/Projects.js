@@ -46,7 +46,6 @@ export default function Home() {
     }, []);
 
 
-
     const moveItems = (x, y) => {
         if (xMoveContainer.current) xMoveContainer.current(x);
         if (yMoveContainer.current) yMoveContainer.current(y);

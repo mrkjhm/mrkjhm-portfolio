@@ -90,7 +90,7 @@ export default function Landing() {
 
                 </motion.div>
                 <div className={styles.description}>
-                    <p>I’m a Multimedia Designer and Zuitt bootcamper <br/> with Full-Stack Web Development.</p>
+                    <p>I’m a Multimedia Designer and <br/>Full-Stack Web Developer.</p>
 
                 </div>
             </div>
