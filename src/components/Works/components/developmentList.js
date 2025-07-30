@@ -1,6 +1,14 @@
 
 export const developmentList = [
     {
+        title: "Ecommerce",
+        src: "ecommerce.jpg",
+        color: "#99a1af",
+        desc: "Personal Project",
+        year: "2025",
+        link: "https://ecommerce-sanity-xandit.vercel.app/"
+    },
+    {
         title: "Fitness Tracker (React Native)",
         src: "fitness-tracker-react-native.jpg",
         color: "#9a0e0e",
