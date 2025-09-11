@@ -12,7 +12,7 @@ export default function index({index, title, desc, link, manageModal}) {
         >
 
             <h2>{title}</h2>
-            <p>{desc}</p>
+            <p className='w-1/2'>{desc}</p>
         </div>
     )
 }

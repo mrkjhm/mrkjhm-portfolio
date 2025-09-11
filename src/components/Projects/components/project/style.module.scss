@@ -1,4 +1,4 @@
-.project{
+.project {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -8,7 +8,7 @@
   cursor: pointer;
   transition: all 0.2s;
 
-  h2{
+  h2 {
     font-size: 60px;
     margin: 0px;
     font-weight: 400;
@@ -17,39 +17,38 @@
     letter-spacing: 2px;
   }
 
-  p{
+  p {
     font-size: 1rem;
     transition: all 0.4s;
     font-weight: 300;
   }
 
-  &:last-of-type{
+  &:last-of-type {
     border-bottom: 1px solid rgb(201, 201, 201);
   }
 
-  &:hover{
+  &:hover {
     color: #4095bf;
 
-    h2{
+    h2 {
       transform: translateX(-10px);
     }
 
-    p{
+    p {
       transform: translateX(10px);
     }
   }
 }
 
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
   .project {
-    &:last-of-type{
+    &:last-of-type {
       border-bottom: 0px solid rgb(201, 201, 201);
     }
   }
-
 }
 
-@media(max-width: 640px) {
+@media (max-width: 640px) {
   .project {
     padding: 40px 0px 40px 0px;
     h2 {

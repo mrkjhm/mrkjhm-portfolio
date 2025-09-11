@@ -1,53 +1,52 @@
 'use client'
 
-import Lenis from 'lenis';
-import {useEffect, useRef} from "react";
-import { motion, useTransform, useScroll } from "framer-motion";
+import Contact from "@/components/Contact/Contact";
 import Description from "@/components/Description/Description";
-import GsapMagnetic from "@/components/GsapMagnetic";
+import DragCards from "@/components/DragCard/DragCard";
 import Landing from "@/components/Landing/Landing";
 import Projects from "@/components/Projects/Projects";
-import SlidingImages from "@/components/SlidingImages"
-import Contact from "@/components/Contact/Contact";
+import Lenis from 'lenis';
+import { useEffect } from "react";
 
 export default function Home() {
 
-    // const container = useRef();
-    // const { scrollYProgress } = useScroll({
-    //     target: container,
-    //     offset: ["start start","end end"]
-    // })
+  // const container = useRef();
+  // const { scrollYProgress } = useScroll({
+  //     target: container,
+  //     offset: ["start start","end end"]
+  // })
 
 
-    useEffect(() => {
+  useEffect(() => {
 
-        const lenis = new Lenis();
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf); 
-        }
+    const lenis = new Lenis();
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-        requestAnimationFrame(raf);
-    }, []);
-
-
+    requestAnimationFrame(raf);
+  }, []);
 
 
-    return (
-        <>
-            <div>
-                <Landing />
-                <Description />
-                <Projects />
-                <SlidingImages />
-                <Contact />
-            </div>
-            {/*<div ref={container} className="relative h-[200vh]">*/}
-            {/*    <Section1 scrollYProgress={scrollYProgress} />*/}
-            {/*    <Section2 scrollYProgress={scrollYProgress} />*/}
-            {/*</div>*/}
-        </>
-    );
+
+
+  return (
+    <>
+      <div>
+        <Landing />
+        <Description />
+        <Projects />
+        {/* <SlidingImages /> */}
+        <DragCards />
+        <Contact />
+      </div>
+      {/*<div ref={container} className="relative h-[200vh]">*/}
+      {/*    <Section1 scrollYProgress={scrollYProgress} />*/}
+      {/*    <Section2 scrollYProgress={scrollYProgress} />*/}
+      {/*</div>*/}
+    </>
+  );
 }
 /*
 
