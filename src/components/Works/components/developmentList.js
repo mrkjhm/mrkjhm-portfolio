@@ -1,6 +1,15 @@
 
 export const developmentList = [
   {
+    title: "Belisita Rattan Furniture",
+    src: "belisitas1.jpg",
+    color: "#fc7814",
+    desc: "Personal Project",
+    // desc: "Built and deployed a modern Full Stack E‑Commerce application using Next.js, Sanity, and Xandit for payment processing.",
+    year: "2026",
+    link: "https://belisitasrattanfurniture.vercel.app/"
+  },
+  {
     title: "Coffee Website",
     src: "coffee.jpg",
     color: "#e9e1d9",
@@ -47,7 +56,7 @@ export const developmentList = [
   {
     title: "ViewMerce",
     src: "belisitas.jpg",
-    color: "#000000",
+    color: "#0d2893",
     desc: "Personal Project",
     year: "2025",
     link: "https://belisitas.vercel.app/"
