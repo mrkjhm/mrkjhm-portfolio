@@ -1,6 +1,24 @@
 
 export const developmentList = [
   {
+    title: "Øverland Bygg & Eiendom AS",
+    src: "overload.jpg",
+    color: "#000000",
+    desc: "Work Project",
+    // desc: "Built and deployed a modern Full Stack E‑Commerce application using Next.js, Sanity, and Xandit for payment processing.",
+    year: "2026",
+    link: "https://www.overlandbyggogeiendom.no/"
+  },
+  {
+    title: "Boligmaleren AS",
+    src: "boligmaleren.jpg",
+    color: "#de3142",
+    desc: "Work Project",
+    // desc: "Built and deployed a modern Full Stack E‑Commerce application using Next.js, Sanity, and Xandit for payment processing.",
+    year: "2026",
+    link: "https://www.boligmaleren.no/"
+  },
+  {
     title: "Belisita Rattan Furniture",
     src: "belisitas1.jpg",
     color: "#fc7814",
